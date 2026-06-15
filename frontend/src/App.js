@@ -554,9 +554,6 @@ function App() {
             <button className={`tab-btn ${activeTab === 'analytics' ? 'active' : ''}`} onClick={() => setActiveTab('analytics')}>
               <BarChart3 size={16} /> Analytics
             </button>
-            <button className={`tab-btn ${activeTab === 'tuning' ? 'active' : ''}`} onClick={() => setActiveTab('tuning')}>
-              <Settings2 size={16} /> Tuning
-            </button>
           </div>
         </div>
 
@@ -587,7 +584,6 @@ function App() {
 
         {activeTab === "predict" && renderPredictTab()}
         {activeTab === "analytics" && renderAnalyticsTab()}
-        {activeTab === "tuning" && renderTuningTab()}
       </div>
     </>
   );
