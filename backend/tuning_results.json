@@ -1,0 +1,58 @@
+{
+  "before_params": {
+    "n_estimators": 200,
+    "max_depth": 15,
+    "random_state": 42
+  },
+  "after_params": {
+    "max_depth": 15,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "n_estimators": 300
+  },
+  "before_metrics": {
+    "r2_score": 0.9787,
+    "mae": 36.66,
+    "rmse": 46.65,
+    "cv_r2_mean": 0.9733,
+    "cv_r2_std": 0.0019
+  },
+  "after_metrics": {
+    "r2_score": 0.9788,
+    "mae": 36.48,
+    "rmse": 46.61,
+    "cv_r2_mean": 0.9735,
+    "cv_r2_std": 0.0016
+  },
+  "r2_improvement": 0.0001,
+  "mae_improvement": 0.18,
+  "tuning_time_seconds": 88.65,
+  "total_combinations": 48,
+  "best_cv_score": 0.9735,
+  "feature_importance": {
+    "Previous_Loan_Demand": 0.4221,
+    "Rainfall_mm": 0.3302,
+    "Farmer_Count": 0.1715,
+    "Yield": 0.0622,
+    "Demand_per_Farmer": 0.0064,
+    "Season_Summer": 0.0007,
+    "Season_Rabi": 0.0007,
+    "Crop_Type_Maize": 0.0006,
+    "Crop_Type_Sugarcane": 0.0006,
+    "Region_West": 0.0006,
+    "Region_North": 0.0006,
+    "Region_East": 0.0006,
+    "Crop_Type_Rice": 0.0006,
+    "Season_Kharif": 0.0006,
+    "Region_Central": 0.0006,
+    "Crop_Type_Wheat": 0.0005,
+    "Crop_Type_Cotton": 0.0005,
+    "Region_South": 0.0005
+  },
+  "dataset_info": {
+    "total_rows": 2000,
+    "total_features": 18,
+    "train_rows": 1600,
+    "test_rows": 400
+  }
+}
