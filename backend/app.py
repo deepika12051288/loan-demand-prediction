@@ -198,4 +198,14 @@ def serve(path):
 
 
 if __name__ == "__main__":
+    import webbrowser
+    from threading import Timer
+
+    def open_browser():
+        webbrowser.open_new("http://127.0.0.1:5000/")
+
+    # Only open browser in the main thread (ignores Flask's Werkzeug reloader reload)
+    if not os.environ.get("WERKZEUG_RUN_MAIN"):
+        Timer(1.5, open_browser).start()
+
     app.run(debug=True)
